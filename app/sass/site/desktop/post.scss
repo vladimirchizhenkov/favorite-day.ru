@@ -1,0 +1,53 @@
+.post {
+  display: flex;
+  flex-direction: column;
+
+  &__user {
+    width: 120px;
+    text-align: center;
+  }
+
+  &__photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+  }
+
+  &__name {
+    font-size: $themeFontSizeS;
+    font-weight: 700;
+    color: $themeColorBlue;
+  }
+
+  &__date {
+    font-size: $themeFontSizeS;
+    color: $themeColorGrey;
+    font-weight: 700;
+  }
+
+  &__title {
+  }
+
+  &__video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+    margin-bottom: 24px;
+  }
+
+  &__frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__link {
+    @include link;
+    margin: 16px 0;
+  }
+
+}

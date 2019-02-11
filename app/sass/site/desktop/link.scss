@@ -1,0 +1,42 @@
+.link {
+  color: $themeColorWhite;
+  transition: color 0.3s;
+
+   &:hover {
+     color: $themeColorWhite;
+   }
+
+  &--color-blue {
+    color: $themeColorBlue;
+    &:hover {
+      color: $themeColorBlue;
+      text-decoration: none;
+    }
+  }
+
+  &--color-main {
+    color: $themeColorMain;
+    &:hover {
+      color: $themeColorGrey;
+      text-decoration: none;
+    }
+  }
+
+  &--border {
+    &::after {
+      font-size: 35px;
+      display: inline-block;
+      content: '|';
+      color: $themeColorWhite;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+  }
+
+  &--clean {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+ }

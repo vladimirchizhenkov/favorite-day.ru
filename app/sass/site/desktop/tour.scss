@@ -1,0 +1,211 @@
+.tour {
+
+  &__img {
+    width: 100%;
+
+    &--gallery {
+      width: 25%;
+      height: 200px;
+    }
+    &--short-front {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    &--price {
+      width: 100px;
+      height: 100px;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__wrapper {
+
+    &--program {
+      display: flex;
+      justify-content: center;
+      padding-top: 32px;
+      margin-bottom: 32px;
+    }
+    &--price-top {
+      text-align: center;
+      padding: 24px 0;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+
+    &--size-s {
+      font-size: $themeFontSizeXL;
+    }
+    &--size-m {
+      font-size: 30px;
+      font-weight: 700;
+    }
+    &--size-l {
+      font-size: 62px;
+      font-weight: 700;
+    }
+    &--text-white {
+      color: $themeColorWhite;
+    }
+    &--text-center {
+      text-align: center;
+    }
+    &--border-bottom-green {
+      border-bottom: 3px solid $themeColorLemon;
+      margin-bottom: 16px;
+    }
+    &--mx-48 {
+      margin: 48px 0;
+    }
+    &--mb-32 {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__pic {
+  }
+
+  &__inner {
+
+    &--start-info {
+      text-align: center;
+      padding: 48px 0 24px 0;
+    }
+    &--gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    &--condition-top {
+      padding-top: 48px;
+    }
+    &--condition-low {
+      padding-bottom: 48px;
+    }
+    &--button {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    &--program {
+      padding-bottom: 48px;
+    }
+    &--prog-photo {
+      width: 48%;
+    }
+    &--prog-text {
+      width: 50%;
+    }
+  }
+
+  &__icon {
+    width: 50%;
+
+    &--start-info {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__text {
+
+    &--start-info {
+      margin-bottom: 0;
+    }
+    &--text-center {
+      text-align: center;
+    }
+  }
+
+  &__span {
+
+    &--start-info {
+      font-weight: 700;
+      font-size: $themeFontSizeM;
+    }
+    &--prog-text {
+      font-weight: 700;
+      font-size: $themeFontSizeM;
+    }
+  }
+
+  &__button {
+    display: inline-block;
+    color: $themeColorWhite;
+    font-size: $themeFontSizeL;
+    font-weight: 700;
+    text-align: center;
+    line-height: 65px;
+    letter-spacing: 2px;
+    padding-left: 65px;
+    padding-right: 65px;
+    background-color: $themeColorLemon;
+    border: 4px solid $themeColorLemon;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      background-color: $themeColorWhite;
+      color: $themeColorLemon;
+    }
+  }
+
+  &__tab {
+    display: inline-block;
+    font-weight: 700;
+    border: 3px solid $themeColorMain;
+    line-height: 57px;
+    padding-left: 120px;
+    padding-right: 120px;
+    background-color: $themeColorWhite;
+    color: $themeColorMain;
+    &:hover {
+      text-decoration: none;
+      background-color: $themeColorWhite;
+      color: $themeColorMain;
+    }
+
+    &--active {
+      line-height: 57px;
+      padding-left: 120px;
+      padding-right: 120px;
+      border: 3px solid $themeColorMain;
+      background-color: $themeColorMain;
+      color: $themeColorWhite;
+      &:hover {
+        background-color: $themeColorMain;
+        color: $themeColorWhite;
+      }
+    }
+  }
+
+  &__program {
+
+    &--short {
+      position: relative;
+    }
+    &--full {
+      display: none;
+    }
+  }
+
+  &__prog-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__form {
+    background-image: url("../img/tour_wallpapers.jpg");
+    -webkit-background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 60px;
+    margin: 48px 0 24px 0;
+  }
+
+}

@@ -1,0 +1,37 @@
+.aside {
+
+  &__title {
+    @include title;
+    background-color: $themeColorLemon;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  &__item {
+    margin-bottom: 8px;
+  }
+
+  &__link {
+    transition: color 0.3s;
+    color: $themeColorBlue;
+    font-weight: 400;
+
+    &:hover {
+      color: $themeColorLemon;
+      text-decoration: none;
+    }
+  }
+
+  &__link, &__subitem {
+    cursor: pointer;
+  }
+
+  &__sublist {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+}

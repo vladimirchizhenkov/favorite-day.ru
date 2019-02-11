@@ -1,0 +1,30 @@
+.menu {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+
+    &__list {
+    }
+
+    &__item {
+
+    }
+
+    &__link {
+        font-family: $themeFontOffensive;
+        color: $themeColorMain;
+        font-size: 18px;
+        transition: color 0.3s;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: none;
+            color: $themeColorLemon;
+        }
+
+        &--active {
+            color: $themeColorLemon;
+        }
+    }
+
+}

@@ -1,0 +1,38 @@
+.footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid #ccc;
+  min-height: 200px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    display: flex;
+  }
+
+  &__right {
+  }
+
+  &__title {
+  }
+
+  &__item {
+    align-self: flex-start;
+
+    &--partner {
+      margin-right: 16px;
+      font-weight: 700;
+    }
+    &--img {
+      margin-right: 16px;
+    }
+  }
+
+  &__link {
+    align-self: flex-start;
+  }
+
+}

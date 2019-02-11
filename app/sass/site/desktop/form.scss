@@ -1,0 +1,165 @@
+.form {
+
+  &--horizontal {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &--vertical {
+    padding: 24px;
+    background-color: $themeColorLemon;
+  }
+
+  &__title {
+    color: $themeColorWhite;
+    font-weight: 700;
+  }
+
+  &__text {
+  }
+
+  &__item {
+
+    &--subscribe {
+      position: relative;
+      background-color: transparent;
+      width: 200px;
+    }
+
+    &--search {
+      position: relative;
+      background-color: transparent;
+      width: 200px;
+    }
+  }
+
+  &__blockinput {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__input {
+
+    &--horizontal {
+      display: block;
+      width: 100%;
+      background-color: $themeColorWhite;
+      line-height: 56px;
+      padding: 0 16px;
+      outline: $themeColorLemon;
+    }
+
+    &--vertical {
+      display: block;
+      width: 100%;
+      line-height: 56px;
+      padding: 0 16px;
+      border: none;
+      background-color: $themeColorWhite;
+    }
+
+    &--search {
+      width: 100%;
+      line-height: 35px;
+      padding: 0 25px 0 15px;
+      border: 1px solid $themeColorMain;
+      background-color: transparent;
+      color: $themeColorMain;
+    }
+
+    &--subscribe {
+      width: 100%;
+      line-height: 40px;
+      padding-left: 16px;
+      background-color: transparent;
+      color: $themeColorWhite;
+      border: 1px solid $themeColorWhite;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+
+      &::placeholder {
+        color: $themeColorWhite;
+      }
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    line-height: 56px;
+    background-color: $themeColorLemon;
+    border: 3px solid $themeColorLemon;
+    color: $themeColorWhite;
+    font-weight: 700;
+    outline: none;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover {
+      background-color: $themeColorWhite;
+      color: $themeColorLemon;
+    }
+
+    &--vertical {
+      display: block;
+      padding: 0 16px;
+      width: 100%;
+      line-height: 56px;
+      background-color: $themeColorMain;
+      border: 3px solid $themeColorMain;
+      color: $themeColorWhite;
+      &:hover {
+        color: $themeColorMain;
+      }
+    }
+
+    &--search {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      border: none;
+      border-left: 1px solid $themeColorMain;
+      border-right: 1px solid $themeColorMain;
+      background-color: $themeColorLemon;
+      outline: none;
+      width: 35px;
+      height: 35px;
+      right: 0;
+      top: 50%;
+      margin-top: -18px;
+      -webkit-transition: background-color 0.3s;
+      -o-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+      background-image: url("../img/form_icon-search.svg");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      &:hover {
+        background-color: $themeColorBlue;
+      }
+    }
+
+    &--subscribe {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      border: 1px solid #fff;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+      right: 0;
+      top: 0;
+      width: 40px;
+      height: 44px;
+      background-image: url("../img/form_icon-mail.png");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__wrapper {
+  }
+
+}

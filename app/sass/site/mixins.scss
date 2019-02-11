@@ -1,0 +1,50 @@
+// Mixins //
+
+@mixin title {
+    display: block;
+    text-transform: uppercase;
+    color: $themeColorWhite;
+    font-size: $themeFontSizeL;
+    background-color: $themeColorBlue;
+    padding: 4px 8px;
+    &:hover {
+        text-decoration: none;
+        color: $themeColorWhite;
+    }
+}
+
+@mixin button {
+
+}
+
+@mixin link {
+    color: $themeColorBlue;
+    font-weight: 400;
+    text-decoration: none;
+    transition: color 0.3s;
+    &:hover {
+        color: $themeColorLemon;
+        text-decoration: none;
+    }
+}
+
+@mixin link--black {
+    color: $themeColorMain;
+    font-size: $themeFontSizeXL;
+    font-weight: 400;
+    text-decoration: none;
+    line-height: 1.3;
+    &:hover {
+        color: $themeColorMain;
+    }
+}
+
+@mixin box-shadow {
+    box-shadow: $themeBoxShadowCard;
+    border-bottom: 5px solid transparent;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    &:hover {
+        box-shadow: none;
+        border-bottom: 5px solid $themeColorLemon;
+    }
+}

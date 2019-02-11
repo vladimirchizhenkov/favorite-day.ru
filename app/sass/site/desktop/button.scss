@@ -1,0 +1,25 @@
+.button {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 8px 16px;
+
+  &:hover {
+    text-decoration: none;
+    color: $themeColorWhite;
+  }
+
+  &--color-blue {
+    color: $themeColorWhite;
+    background-color: $themeColorBlue;
+    border: 2px solid $themeColorBlue;
+    transition: color 0.3s, background-color 0.3s;
+    &:hover {
+      color: $themeColorBlue;
+      background-color: transparent;
+    }
+  }
+
+}

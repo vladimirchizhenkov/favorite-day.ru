@@ -1,0 +1,54 @@
+.feedback {
+
+  &__caption {
+    font-size: 2.3rem;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 48px;
+    margin-bottom: 48px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+    padding: 16px 24px 24px 24px;
+
+    &--bg-blue {
+      background-color: #e6f1f5;
+    }
+    &--bg-lemon {
+      background-color: $themeColorLemon;
+    }
+    &--border-grey {
+      border: 1px solid #ccc;
+    }
+  }
+
+  &__title {
+    font-size: $themeFontSizeXL;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.5rem;
+
+    &--color-white {
+      color: $themeColorWhite;
+    }
+  }
+
+  &__text {
+    font-size: $themeFontSizeS;
+    margin-bottom: 48px;
+    flex-grow: 1;
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+
+}

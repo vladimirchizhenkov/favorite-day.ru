@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour Structure</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="scroll-top">up</div>
+<div class="body-wrapper">
+    <!--header-->
+    <header class="header">
+        <div class="container">
+            <div class="row mt-4 mb-3">
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="header__logo">
+                        <a href="#" class="link">
+                            <img src="img/logo.svg" alt="logo" class="header__image">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="index.html" class="menu__link">О нас</a></li>
+                        <li class="menu__item"><a href="index.html" class="menu__link menu__link--active">Блог</a></li>
+                        <li class="menu__item"><a href="articles.html" class="menu__link">Новости Outdoor</a></li>
+                        <li class="menu__item"><a href="tour.html" class="menu__link">Туры</a></li>
+                        <li class="menu__item"><a href="shand.html" class="menu__link">Барахолка</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="div"
+                         style="display: flex; align-items: center; height: 100%; justify-content: flex-end;">
+                        <form action="" method="post" class="form">
+                            <div class="form__item form__item--search">
+                                <input type="text" class="form__input form__input--search" placeholder="Search">
+                                <input type="submit" class="form__button form__button--search" value="">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--main content-->
+    <main class="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-md-8 col-lg-8">
+                    <div class="tour__title tour__title--size-s">Россия / Камчатка</div>
+                    <h2 class="tour__title tour__title--size-l">Вулканы Камчатки</h2>
+                    <div class="tour__title tour__title--size-s">11 - 22 Августа</div>
+                    <img src="img/tour_dump-header.jpeg" alt="img" class="tour__img">
+                </div>
+
+                <div class="col-md-4 col-lg-4">
+                    <form action="" class="form form--vertical">
+                        <div class="form__title">Оставьте заявку</div>
+                        <p class="form__text form__text--title">Мы пришлем вам все подробности о туре и порядок
+                            последующих
+                            действий</p>
+                        <div class="form__blockinput">
+                            <input type="text" class="form__input form__input--vertical" placeholder="Фио">
+                        </div>
+
+                        <div class="form__blockinput">
+                            <input type="text" class="form__input form__input--vertical" placeholder="Email">
+                        </div>
+
+                        <div class="form__blockinput">
+                            <input type="text" class="form__input form__input--vertical" placeholder="Телефон">
+                        </div>
+
+                        <div class="form__blockinput">
+                            <input type="text" class="form__input form__input--vertical" placeholder="Ваш VK">
+                        </div>
+
+                        <div class="form__blockinput">
+                            <input type="submit" class="form__button form__button--vertical" value="Присоединиться">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3 col-lg-3">
+                    <div class="tour__inner tour__inner--start-info">
+                        <img src="img/tour_icon-cash.png" alt="icon" class="tour__icon tour__icon--start-info">
+                        <p class="tour__title tour__title--size-m">28 000 ₽</p>
+                        <p class="tour__text">В стоимость входит:
+                            работа гидов, питание на маршруте, проживание в хостеле и на турбазе, волокуши, страховка,
+                            все трансферы по маршруту, палатки с печкой</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="tour__inner tour__inner--start-info">
+                        <img src="img/tour_icon-weight.png" alt="icon" class="tour__icon tour__icon--start-info">
+                        <p class="tour__title tour__title--size-m">Сложность</p>
+                        <p class="tour__text"><span class="tour__span tour__span--start-info">Легкая</span> - маршрут
+                            подходит всем людям, ведущим активный образ жизни.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="tour__inner tour__inner--start-info">
+                        <img src="img/tour_icon-date.png" alt="icon" class="tour__icon tour__icon--start-info">
+                        <p class="tour__title tour__title--size-m">10 дней</p>
+                        <p class="tour__text tour__text--start-info">Ночевки в палатке: <span
+                                class="tour__span tour__span--start-info">7</span></p>
+                        <p class="tour__text">Ночевки в гостинице: <span
+                                class="tour__span tour__span--start-info">3</span></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-lg-3">
+                    <div class="tour__inner tour__inner--start-info">
+                        <img src="img/tour_icon-track.png" alt="icon" class="tour__icon tour__icon--start-info">
+                        <p class="tour__title tour__title--size-m">70 км</p>
+                        <p class="tour__text">Пеший переход: <span class="tour__span tour__span--start-info">8-15</span>
+                            км/день</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="row">-->
+            <!--<div class="col-md-12 col-lg-12">-->
+            <!--<div class="tour__inner tour__inner&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-1.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-2.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-3.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-4.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-1.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-2.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-3.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--<img src="img/tour_gallery-4.jpg" alt="" class="tour__img tour__img&#45;&#45;gallery">-->
+            <!--</div>-->
+            <!--</div>-->
+            <!--</div>-->
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <section>
+                        <ul id="gallery">
+                            <li id="fullPreview"></li>
+                            <li>
+                                <a href="img/tour_gallery-1.jpg"></a>
+                                <img data-original="img/tour_gallery-1.jpg" style="width: 250px; height: 187px;"
+                                     src="img/tour_gallery-1.jpg" alt="Фото 5"/>
+
+                                <div class="overLayer"></div>
+                                <div class="infoLayer">
+                                    <ul>
+                                        <li><h2>Фото 5</h2></li>
+                                        <li><p>Посмотреть</p></li>
+                                        <li><p>это</p></li>
+                                    </ul>
+                                </div>
+                                <div class="projectInfo">Mazda Motor Corporation — японская автомобилестроительная
+                                    компания, выпускающая автомобили «Мазда». Штаб-квартира — в Хиросиме.
+                                </div>
+                            </li>
+                            <li>
+                                <a href="img/tour_gallery-1.jpg"></a>
+                                <img data-original="img/tour_gallery-1.jpg" style="width: 250px; height: 187px;"
+                                     src="img/tour_gallery-1.jpg" alt="Фото 5"/>
+
+                                <div class="overLayer"></div>
+                                <div class="infoLayer">
+                                    <ul>
+                                        <li><h2>Фото 5</h2></li>
+                                        <li><p>Посмотреть</p></li>
+                                        <li><p>это</p></li>
+                                    </ul>
+                                </div>
+                                <div class="projectInfo">Mazda Motor Corporation — японская автомобилестроительная
+                                    компания, выпускающая автомобили «Мазда». Штаб-квартира — в Хиросиме.
+                                </div>
+                            </li>
+                            <li>
+                                <a href="img/tour_gallery-1.jpg"></a>
+                                <img data-original="img/tour_gallery-1.jpg" style="width: 250px; height: 187px;"
+                                     src="img/tour_gallery-1.jpg" alt="Фото 5"/>
+
+                                <div class="overLayer"></div>
+                                <div class="infoLayer">
+                                    <ul>
+                                        <li><h2>Фото 5</h2></li>
+                                        <li><p>Посмотреть</p></li>
+                                        <li><p>это</p></li>
+                                    </ul>
+                                </div>
+                                <div class="projectInfo">Mazda Motor Corporation — японская автомобилестроительная
+                                    компания, выпускающая автомобили «Мазда». Штаб-квартира — в Хиросиме.
+                                </div>
+                            </li>
+                            <li>
+                                <a href="img/tour_gallery-1.jpg"></a>
+                                <img data-original="img/tour_gallery-1.jpg" style="width: 250px; height: 187px;"
+                                     src="img/tour_gallery-1.jpg" alt="Фото 5"/>
+
+                                <div class="overLayer"></div>
+                                <div class="infoLayer">
+                                    <ul>
+                                        <li><h2>Фото 5</h2></li>
+                                        <li><p>Посмотреть</p></li>
+                                        <li><p>это</p></li>
+                                    </ul>
+                                </div>
+                                <div class="projectInfo">Mazda Motor Corporation — японская автомобилестроительная
+                                    компания, выпускающая автомобили «Мазда». Штаб-квартира — в Хиросиме.
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col lg-6">
+                    <div class="tour__inner tour__inner--condition-top">
+                        <div class="tour__title tour__title--size-s">Горы</div>
+                        <p class="tour__text">В этом путешествии мы отправимся изучать горные тропы в окрестностях
+                            Бахчисарая, заночуем в одной из пещер древнего города Тепе-Кермен, пройдем высотный маршрут
+                            по скалам Алимовой Балки. Через Каньон Узунджи и Ай-Петринскую яйлу выйдем к бухте Ласпи, а
+                            по дороге заночуем в домике лесника и попаримся в баньке. Из бухты нас заберет катер, чтобы
+                            мы смогли полюбоваться высокими скалами мыса Айя с воды и, если повезет, даже увидеть
+                            дельфинов совсем рядом с лодкой. Высадимся не доходя до Балаклавы и прогуляемся по
+                            реликтовому сосновому лесу. Уютная Балаклава станет финальной точкой нашего маршрута.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col lg-6">
+                    <div class="tour__inner tour__inner--condition-top">
+                        <div class="tour__title tour__title--size-s">Погода</div>
+                        <p class="tour__text">Зимой в Крыму погода бывает разнообразной. Может быть снежно с
+                            температурой до -10, может быть солнечно и тепло до +15, может пойти дождь. Поэтому личные
+                            вещи нужно собирать с учетом этих факторов. Спальник должен быть с температурой комфорта от
+                            -5 до -10 градусов. Если погода позволит, можно даже искупаться в море. Температура воды в
+                            январе может доходить до отметки 10-12 градусов. Кроме всего прочего тут действительно
+                            потрясающая энергетика, располагающая к любым видам активности и путешествий. Море, солнце,
+                            рельефные горы и чарующие леса – основные преимущества здешних мест. </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col lg-6">
+                    <div class="tour__inner tour__inner--condition-low">
+                        <div class="tour__title tour__title--size-s">Проживание</div>
+                        <p class="tour__text">Прибыть в Бахчисарай вы можете в любое время 30 декабря или раньше. В
+                            городе и окрестностях есть чем заняться и вы точно не заскучаете! Если будет солнечная
+                            погода, по желанию можно организовать урок скалолазания на окрестных скалах.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col lg-6">
+                    <div class="tour__inner tour__inner--condition-low">
+                        <div class="tour__title tour__title--size-s">Условия</div>
+                        <p class="tour__text">Участники похода готовят пищу, собирают дрова и поддерживают костер, пока
+                            остальные собирают лагерь. В течении дня дежурят 2-3 человека. Все общественное снаряжение
+                            распределяется по участникам похода - это 20-30% от объема вашего рюкзака.
+                            (котелки, газ, горелки, еда и т.д.).</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="tour__inner tour__inner--button">
+                        <a href="#" class="tour__button">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="tour__inner tour__inner--program">
+                        <h3 class="tour__title tour__title--size-l tour__title--text-center tour__title--program">
+                            Программа путешествия
+                        </h3>
+                        <div class="tour__wrapper tour__wrapper--program">
+                            <a href="tour_short_prog" class="tour__tab tour__tab--active">Краткая</a>
+                            <a href="tour_long_prog" class="tour__tab">Подробная</a>
+                        </div>
+                        <div class="tour__wrapper">
+                            <div id="tour_short_prog" class="tour__program tour__program--short">
+                                <img src="img/tour_map_body.jpg" alt="body" class="tour__img tour__img--short-body">
+                                <img src="img/tour_map.png" alt="map" class="tour__img tour__img--short-front">
+                            </div>
+                            <div id="tour_long_prog" class="tour__program tour__program--full">
+                                <div class="tour__prog-item">
+                                    <div class="tour__inner tour__inner--prog-photo">
+                                        <img src="img/tour__program-img.jpg" alt="tour img" class="tour__img">
+                                    </div>
+                                    <div class="tour__inner tour__inner--prog-text">
+                                        <div class="tour__title tour__title--size-s">
+                                            1 Января - Тепе-Кермен
+                                        </div>
+                                        <p class="tour__text">
+                                            Надеваем рюкзаки и начинаем наш поход. Выходим из хостела в Бахчисарае и,
+                                            привыкая к походному ритму, идем через живописный осенний лес в Тепе-Кермен,
+                                            где располагаемся на ночевку в одной из пещер древней крепости.
+                                        </p>
+                                        <p class="tour__text"><span class="tour__span tour__span--prog-text">Переход за день: 7 км</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tour__prog-item">
+                                    <div class="tour__inner tour__inner--prog-photo">
+                                        <img src="img/tour__program-img.jpg" alt="tour img" class="tour__img">
+                                    </div>
+                                    <div class="tour__inner tour__inner--prog-text">
+                                        <div class="tour__title tour__title--size-s">
+                                            1 Января - Тепе-Кермен
+                                        </div>
+                                        <p class="tour__text">
+                                            Надеваем рюкзаки и начинаем наш поход. Выходим из хостела в Бахчисарае и,
+                                            привыкая к походному ритму, идем через живописный осенний лес в Тепе-Кермен,
+                                            где располагаемся на ночевку в одной из пещер древней крепости.
+                                        </p>
+                                        <p class="tour__text"><span class="tour__span tour__span--prog-text">Переход за день: 7 км</span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tour__prog-item">
+                                    <div class="tour__inner tour__inner--prog-photo">
+                                        <img src="img/tour__program-img.jpg" alt="tour img" class="tour__img">
+                                    </div>
+                                    <div class="tour__inner tour__inner--prog-text">
+                                        <div class="tour__title tour__title--size-s">
+                                            1 Января - Тепе-Кермен
+                                        </div>
+                                        <p class="tour__text">
+                                            Надеваем рюкзаки и начинаем наш поход. Выходим из хостела в Бахчисарае и,
+                                            привыкая к походному ритму, идем через живописный осенний лес в Тепе-Кермен,
+                                            где располагаемся на ночевку в одной из пещер древней крепости.
+                                        </p>
+                                        <p class="tour__text"><span class="tour__span tour__span--prog-text">Переход за день: 7 км</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h3 class="tour__title tour__title--text-center tour__title--size-l">
+                        Наши гиды
+                    </h3>
+                    <p class="tour__text tour__text--text-center">
+                        У нас работают только те люди, которых мы знаем лично, кому доверяем и уверены, что именно с
+                        ними все участники получат максимум положительных эмоций!
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lmd-12 col-lg-12">
+                    <div class="slider slider--tour slider--mb-32">
+                        <div class="slider__item">
+                            <a href="#" class="slider__link">
+                                <img src="img/slider_dump1.jpg"
+                                     alt="slider img"
+                                     class="slider__img" style="display: block; width: 100%">
+                            </a>
+                        </div>
+                        <div class="slider__item">
+                            <a href="#" class="slider__link">
+                                <img src="img/slider_dump2.jpg" style="display: block; width: 100%"
+                                     alt="slider img"
+                                     class="slider__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="tour__inner tour__inner--button">
+                        <a href="#" class="tour__button">Присоединиться</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h3 class="tour__title tour__title--text-center tour__title--size-l">
+                        Что входит в стоимость?
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div class="tour__price tour__price-left">
+                        <div class="tour__wrapper--price-top">
+                            <img src="img/tour_icon-access.png" alt="tour price" class="tour__img tour__img--price">
+
+                            <h3 class="tour__title tour__title--size-m">
+                                В стоимость входит
+                            </h3>
+                        </div>
+                        <ul class="tour__list">
+                            <li class="tour__point">Проживание в Бахчисарае до похода и по его завершению (3 ночи)
+                            </li>
+                            <li class="tour__point">Все трансферы по маршруту</li>
+                            <li class="tour__point">Работа гидов</li>
+                            <li class="tour__point">Питание на маршруте</li>
+                            <li class="tour__point">Общественное снаряжение</li>
+                            <li class="tour__point">Обеспечение безопасности (общественная аптечка, GPS-навигатор)
+                            </li>
+                            <li class="tour__point">Ночевка в кемпинге у дома лесника и баня (по желанию можно
+                                оплатить ночевку в кровати в доме)
+                            </li>
+                            <li class="tour__point">Катер в бухте Ласпи</li>
+                            <li class="tour__point">Аренда снаряжения и работа инструкторов на скалолазном
+                                маршруте
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6">
+                    <div class="tour__price tour__price-right">
+                        <div class="tour__wrapper--price-top">
+                            <img src="img/tour_icon-red-cross.png" alt="tour price"
+                                 class="tour__img tour__img--price">
+                            <h3 class="tour__title tour__title--size-m">
+                                В стоимость не входит
+                            </h3>
+                        </div>
+                        <ul class="tour__list">
+                            <li class="tour__point">Проживание в Бахчисарае до похода и по его завершению (3 ночи)
+                            </li>
+                            <li class="tour__point">Все трансферы по маршруту</li>
+                            <li class="tour__point">Работа гидов</li>
+                            <li class="tour__point">Питание на маршруте</li>
+                            <li class="tour__point">Общественное снаряжение</li>
+                            <li class="tour__point">Обеспечение безопасности (общественная аптечка, GPS-навигатор)
+                            </li>
+                            <li class="tour__point">Ночевка в кемпинге у дома лесника и баня (по желанию можно
+                                оплатить ночевку в кровати в доме)
+                            </li>
+                            <li class="tour__point">Катер в бухте Ласпи</li>
+                            <li class="tour__point">Аренда снаряжения и работа инструкторов на скалолазном
+                                маршруте
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h3 class="tour__title tour__title--text-center tour__title--size-l tour__title--mx-48">
+                        Возьми с собой
+                    </h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="tour__wrapper">
+                        <div class="tour__equip">
+                            <div class="tour__title tour__title--size-m tour__title--border-bottom-green">Вещи</div>
+                            <ul class="tour__list">
+                                <li class="tour__point">
+                                    Фонарь + батарейки
+                                </li>
+                                <li class="tour__point">
+                                    Посуда (Кружка, ложка, миска, нож), бутылка (1-2 л)
+                                </li>
+                                <li class="tour__point">
+                                    Очки и крем от солнца
+                                </li>
+                                <li class="tour__point">
+                                    Принадлежности гигиены
+                                </li>
+                                <li class="tour__point">
+                                    Полотенце
+                                </li>
+                                <li class="tour__point">
+                                    Документы
+                                </li>
+                                <li class="tour__point">
+                                    Личная аптечка
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="tour__wrapper">
+                        <div class="tour__equip">
+                            <div class="tour__title tour__title--size-m tour__title--border-bottom-green">Снаряжение
+                            </div>
+                            <ul class="tour__list">
+                                <li class="tour__point">
+                                    Рюкзак (50 - 70 л) + накидка
+                                </li>
+                                <li class="tour__point">
+                                    Коврик и сидушка
+                                </li>
+                                <li class="tour__point">
+                                    Спальник (комфорт -10°C)
+                                </li>
+                                <li class="tour__point">
+                                    Палатка (внутренник не из сетки)
+                                </li>
+                                <li class="tour__point">
+                                    Трекинговые палки
+                                </li>
+                                <li class="tour__point">
+                                    Теплая трекинговая обувь (РАЗНОШЕННАЯ!)
+                                </li>
+                                <li class="tour__point">
+                                    Обувь сменная (трекинговые сандалии)
+                                </li>
+                                <li class="tour__point">
+                                    Гамаши
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4">
+                    <div class="tour__wrapper">
+                        <div class="tour__equip">
+                            <div class="tour__title tour__title--size-m tour__title--border-bottom-green">Одежда</div>
+                            <ul class="tour__list">
+                                <li class="tour__point">
+                                    Термобелье
+                                </li>
+                                <li class="tour__point">
+                                    Флиска
+                                </li>
+                                <li class="tour__point">
+                                    Ветрозащитная куртка
+                                </li>
+                                <li class="tour__point">
+                                    Дождевик
+                                </li>
+                                <li class="tour__point">
+                                    Легкие штаны
+                                </li>
+                                <li class="tour__point">
+                                    Шорты, футболки 2-3 шт
+                                </li>
+                                <li class="tour__point">
+                                    Смена нижнего белья
+                                </li>
+                                <li class="tour__point">
+                                    Термоноски 2 шт. + теплые носки, плавки/купальник
+                                </li>
+                                <li class="tour__point">
+                                    Головной убор и баф
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="tour__form">
+                        <form action="" class="form form--horizontal" method="post">
+                            <h3 class="tour__title tour__title--text-white tour__title--size-m tour__title--text-center tour__title--mb-32">
+                                Записаться в тур и задать возникшие вопросы</h3>
+                            <div class="form__blockinput">
+                                <input type="text" name="" class="form__input form__input--horizontal"
+                                       placeholder="ФИО">
+                            </div>
+                            <div class="form__blockinput">
+                                <input type="text" name="" class="form__input form__input--horizontal"
+                                       placeholder="E-mail">
+                            </div>
+                            <div class="form__blockinput">
+                                <input type="text" name="" class="form__input form__input--horizontal"
+                                       placeholder="Phone">
+                            </div>
+                            <div class="form__blockinput">
+                                <input type="text" name="" class="form__input form__input--horizontal"
+                                       placeholder="Ваш VK">
+                            </div>
+                            <div class="form__blockinput">
+                                <input type="submit" class="form__button"
+                                       placeholder="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <div class="footer__inner">
+
+                        <div class="footer__left">
+                            <div class="footer__item footer__item--partner">Наши партнеры:</div>
+                            <a href="" class="footer__link"><img src="img/footer_dump2.jpg" alt="footer"
+                                                                 class="footer__item footer__item--img"></a>
+                            <a href="" class="footer__link"><img src="img/footer_dump1.jpg" alt="footer"
+                                                                 class="footer__item footer__item--img"></a>
+                            <a href="" class="footer__link"><img src="img/footer_dump3.png" alt="footer"
+                                                                 class="footer__item footer__item--img"></a>
+                        </div>
+
+                        <div class="footer__right">
+                            <div class="social">
+                                <div class="social__title">Присоединяйтесь к нам</div>
+                                <ul class="social__list">
+                                    <li class="social__icons"><a target="_blank" href="#"
+                                                                 class="social__link social__link--vk"></a>
+                                    </li>
+                                    <li class="social__icons"><a target="_blank" href="#"
+                                                                 class="social__link social__link--yt"></a>
+                                    </li>
+                                    <li class="social__icons"><a target="_blank" href="#"
+                                                                 class="social__link social__link--inst"></a>
+                                    </li>
+                                </ul>
+                                <div class="social__tel">
+                                    <a href="#" class="social__phone social__phone--ico">8 927 777 55 44</a>
+                                    <a href="#" class="social__phone">8 927 333 11 44</a>
+                                </div>
+                                <div class="social__email">
+                                    <a href="#" class="social__mail-link">feedbacks@actdays.com</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/libs.min.js"></script>
+<script src="js/common.js"></script>
+</body>
+</html>

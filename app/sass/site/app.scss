@@ -1,0 +1,40 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700&amp;subset=cyrillic'); //font-family: 'Roboto Slab', serif;
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700&amp;subset=cyrillic'); //font-family: 'Cousine', monospace;
+
+// Variables
+@import 'variables';
+@import 'mixins';
+
+// Normalizer
+@import 'desktop/normalize';
+
+// Slick-Slider
+@import 'desktop/slick';
+@import 'desktop/slick-theme';
+@import 'desktop/least-gallery';
+@import 'desktop/least-gallery-main';
+
+// Desktop
+@import 'desktop/basic';
+
+@import 'desktop/text';
+
+@import 'desktop/article';
+@import 'desktop/aside';
+@import 'desktop/body-wrapper';
+@import 'desktop/button';
+@import 'desktop/content';
+@import 'desktop/feedback';
+@import 'desktop/footer';
+@import 'desktop/form';
+@import 'desktop/header';
+@import 'desktop/link';
+@import 'desktop/menu';
+@import 'desktop/notice';
+@import 'desktop/post';
+@import 'desktop/scroll-top';
+@import 'desktop/slider';
+@import 'desktop/social';
+@import 'desktop/tour';
+@import 'desktop/tour-card';

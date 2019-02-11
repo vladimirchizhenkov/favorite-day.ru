@@ -1,0 +1,99 @@
+.social {
+  min-width: 200px;
+
+  &__title {
+    font-weight: 700;
+  }
+
+  &__list {
+    display: flex;
+    margin: 8px 0 16px 0;
+
+    &--mb-0 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__icons {
+    margin-right: 16px;
+  }
+
+  &__link {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+
+    &--vk {
+      background-image: url("../../img/social_vk.svg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    &--vk:hover {
+      background-image: url("../../img/social_vk_hover.svg");
+    }
+
+    &--yt {
+      background-image: url("../../img/social_yt.svg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    &--yt:hover {
+      background-image: url("../../img/social_yt_hover.svg");
+    }
+
+    &--inst {
+      background-image: url("../../img/social_instagram.svg");
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+    &--inst:hover {
+      background-image: url("../../img/social_instagram_hover.svg");
+    }
+  }
+
+  &__tel {
+    margin-bottom: 16px;
+  }
+
+  &__phone {
+    display: block;
+    color: $themeColorMain;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: right;
+
+    &:hover {
+      color: $themeColorMain;
+      text-decoration: none;
+    }
+    &:first-child {
+      margin-bottom: 8px;
+    }
+
+    &--ico {
+      position: relative;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        width: 25px;
+        height: 25px;
+        background-image: url("../../img/phone_red.svg");
+        background-size: contain;
+        background-position: 50% 50%;
+      }
+    }
+  }
+  
+  &__mail-link {
+    color: $themeColorGrey;
+    transition: color 0.3s;
+    &:hover {
+      text-decoration: none;
+      color: $themeColorBlue;
+    }
+  }
+
+}

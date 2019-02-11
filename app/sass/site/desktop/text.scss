@@ -1,0 +1,31 @@
+.text {
+  font-family: $themeFontMain;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.75;
+
+  &--weight-300 {
+    font-weight: 300;
+  }
+  &--weight-700 {
+    font-weight: 700;
+  }
+
+  &--size-32 {
+    font-size: 32px;
+  }
+  &--size-24 {
+    font-size: 24px;
+  }
+  &--size-21 {
+    font-size: 21px;
+  }
+
+  &--color-white {
+    color: $themeColorWhite;
+  }
+  &--color-main {
+    color: $themeColorMain;
+  }
+
+}

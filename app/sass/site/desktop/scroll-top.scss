@@ -1,0 +1,22 @@
+.scroll-top {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    z-index: 5;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    color: $themeColorBlue;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    background-color: $themeColorWhiteTransparent;
+    border: 3px solid $themeColorBlue;
+    border-radius: 50%;
+    transition: color 0.3s, border-color 0.3s;
+    &:hover {
+        color: $themeColorLemon;
+        border-color: $themeColorLemon;
+    }
+}
