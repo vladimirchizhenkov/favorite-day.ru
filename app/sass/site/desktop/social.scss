@@ -24,30 +24,30 @@
     height: 25px;
 
     &--vk {
-      background-image: url("../../img/social_vk.svg");
+      background-image: url("/assets/img/icon/social_vk.svg");
       -webkit-background-size: contain;
       background-size: contain;
     }
     &--vk:hover {
-      background-image: url("../../img/social_vk_hover.svg");
+      background-image: url("/assets/img/icon/social_vk_hover.svg");
     }
 
     &--yt {
-      background-image: url("../../img/social_yt.svg");
+      background-image: url("/assets/img/icon/social_yt.svg");
       -webkit-background-size: contain;
       background-size: contain;
     }
     &--yt:hover {
-      background-image: url("../../img/social_yt_hover.svg");
+      background-image: url("/assets/img/icon/social_yt_hover.svg");
     }
 
     &--inst {
-      background-image: url("../../img/social_instagram.svg");
+      background-image: url("/assets/img/icon/social_instagram.svg");
       -webkit-background-size: contain;
       background-size: contain;
     }
     &--inst:hover {
-      background-image: url("../../img/social_instagram_hover.svg");
+      background-image: url("/assets/img/icon/social_instagram_hover.svg");
     }
   }
 
@@ -80,7 +80,7 @@
         content: '';
         width: 25px;
         height: 25px;
-        background-image: url("../../img/phone_red.svg");
+        background-image: url("/assets/img/icon/icon_phone_red.svg");
         background-size: contain;
         background-position: 50% 50%;
       }

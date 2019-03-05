@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="<?php echo LANG_RU ?>">
 <head>
     <meta charset="UTF-8">
-    <title>Article Structure</title>
+    <title><?php echo $pageTitle ?></title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="../gulpfile.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -19,22 +18,21 @@
 
                 <div class="col-md-3 col-lg-3">
                     <div class="header__logo">
-                        <a href="#" class="link">
-                            <img src="../assets/img/logo/logo.svg" alt="logo" class="header__image">
+                        <a href="/index.php" class="link">
+                            <img src="/assets/img/logo/logo.svg" alt="logo" class="header__image">
                         </a>
                     </div>
                 </div>
 
                 <div class="col-md-6 col-lg-6">
                     <ul class="menu">
-                        <li class="menu__item"><a href="index.html" class="menu__link">О нас</a></li>
-                        <li class="menu__item"><a href="index.html" class="menu__link">Блог</a></li>
-                        <li class="menu__item"><a href="articles.html" class="menu__link">Новости Outdoor</a></li>
-                        <li class="menu__item"><a href="tour.html" class="menu__link">Туры</a></li>
-                        <li class="menu__item"><a href="shand.html" class="menu__link">Барахолка</a></li>
+                        <li class="menu__item"><a href="/index.php?c=index" class="menu__link">Обзоры</a></li>
+                        <li class="menu__item"><a href="/index.php?c=article" class="menu__link">Новости-Outdoor</a>
+                        </li>
+                        <li class="menu__item"><a href="/index.php?c=tour" class="menu__link">Туры</a></li>
+                        <li class="menu__item"><a href="/index.php?c=shand" class="menu__link">Барахолка</a></li>
                     </ul>
                 </div>
-
 
                 <div class="col-md-3 col-lg-3">
                     <div class="div"
@@ -57,13 +55,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12 col-lg-12">
-                    <div class="content__main" style="text-align: center">
-                        <p class="text--size-24" style="line-height: 2rem">Идея - организовать единую барахолку для туристов. Чтобы каждый мог найти то, что нужно. Быстро,
-                            без проблем и в одном месте.</p>
-                        <img src="../assets/img/bground/shand_lock.png" alt="section lock" style="width: 500px; height: 350px; margin-bottom: 56px;">
-                        <p class="text--size-24">Вы можете подписаться на наши новости и тогда точно не пропустите открытие этого раздела.
-                            </p>
-                        <p class="text--size-24">Форма.</p>
+                    <div class="content__main">
+                        <?php echo $innerContent ?>
                     </div>
                 </div>
             </div>
@@ -79,9 +72,15 @@
 
                         <div class="footer__left">
                             <div class="footer__item footer__item--partner">Наши партнеры:</div>
-                            <a href="" class="footer__link"><img src="../assets/img/partners/footer_dump2.jpg" alt="footer" class="footer__item footer__item--img"></a>
-                            <a href="" class="footer__link"><img src="../assets/img/partners/footer_dump1.jpg" alt="footer" class="footer__item footer__item--img"></a>
-                            <a href="" class="footer__link"><img src="../assets/img/partners/footer_dump3.png" alt="footer" class="footer__item footer__item--img"></a>
+                            <a href="" class="footer__link"><img src="/assets/img/partners/footer_dump2.jpg"
+                                                                 alt="footer"
+                                                                 class="footer__item footer__item--img"></a>
+                            <a href="" class="footer__link"><img src="/assets/img/partners/footer_dump1.jpg"
+                                                                 alt="footer"
+                                                                 class="footer__item footer__item--img"></a>
+                            <a href="" class="footer__link"><img src="/assets/img/partners/footer_dump3.png"
+                                                                 alt="footer"
+                                                                 class="footer__item footer__item--img"></a>
                         </div>
 
                         <div class="footer__right">
@@ -115,7 +114,7 @@
     </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/libs.min.js"></script>
-<script src="js/common.js"></script>
+<script src="/assets/js/libs.min.js"></script>
+<script src="/assets/js/common.js"></script>
 </body>
 </html>

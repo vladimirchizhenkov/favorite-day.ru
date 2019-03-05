@@ -8,7 +8,7 @@ var gulp         = require ('gulp'),
 	autoprefixer = require ('gulp-autoprefixer'),
 	del          = require ('del'),
 	imagemin     = require ('gulp-imagemin'),
-	pngquant     = require ('imagemin-pngquant'),
+	//pngquant     = require ('imagemin-pngquant'),
 	cache        = require ('gulp-cache');
 
 gulp.task('sass', function() {
@@ -65,7 +65,6 @@ gulp.task('browser-sync', function() {
 		server: {
 			baseDir: 'app'
 		},
-			browser: 'chrome',
 			notify: false
 	});
 });
