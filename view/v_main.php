@@ -24,7 +24,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-6 col-lg-6">
+                <div class="offset-md-1 offset-lg-1 col-md-8 col-lg-8">
                     <ul class="menu">
                         <li class="menu__item"><a href="/index.php?c=index" class="menu__link">Обзоры</a></li>
                         <li class="menu__item"><a href="/index.php?c=article" class="menu__link">Новости-Outdoor</a>
@@ -34,17 +34,17 @@
                     </ul>
                 </div>
 
-                <div class="col-md-3 col-lg-3">
-                    <div class="div"
-                         style="display: flex; align-items: center; height: 100%; justify-content: flex-end;">
-                        <form action="" method="post" class="form">
-                            <div class="form__item form__item--search">
-                                <input type="text" class="form__input form__input--search" placeholder="Search">
-                                <input type="submit" class="form__button form__button--search" value="">
-                            </div>
-                        </form>
-                    </div>
-                </div>
+<!--                <div class="col-md-3 col-lg-3">-->
+<!--                    <div class="div"-->
+<!--                         style="display: flex; align-items: center; height: 100%; justify-content: flex-end;">-->
+<!--                        <form action="" method="post" class="form">-->
+<!--                            <div class="form__item form__item--search">-->
+<!--                                <input type="text" class="form__input form__input--search" placeholder="Search">-->
+<!--                                <input type="submit" class="form__button form__button--search" value="">-->
+<!--                            </div>-->
+<!--                        </form>-->
+<!--                    </div>-->
+<!--                </div>-->
 
             </div>
         </div>
