@@ -6,16 +6,14 @@ include_once 'model/m_system.php';
 
 session_start();
 
-$error404   = false;
 $controller = $_GET['c'] ?? 'index';
-$getUri     = getUri();
+$error404   = false;
 
-if (!file_exists('controller/c_' . $controller . '.php') || $controller == '' || !file_exists($getUri)) {
+if (!file_exists('controller/c_' . $controller . '.php') || $controller == '') {
     $error404 = true;
 }
 
 if (!$error404) {
-
     include_once 'controller/c_' . $controller . '.php';
 
     switch ($controller) {
@@ -25,7 +23,7 @@ if (!$error404) {
         case 'post_single':
             echo setTemplate('v_main', ['innerContent' => $innerContent, 'pageTitle' => $pageTitle]);
             break;
-        case 'article':
+        case 'article' or 'article_single':
             echo setTemplate('v_main', ['innerContent' => $innerContent, 'pageTitle' => $pageTitle]);
             break;
         case 'tour':

@@ -14,7 +14,7 @@
     <!--header-->
     <header class="header">
         <div class="container">
-            <div class="row mt-4 mb-3">
+            <div class="row mt-3 mb-3">
 
                 <div class="col-md-3 col-lg-3">
                     <div class="header__logo">
