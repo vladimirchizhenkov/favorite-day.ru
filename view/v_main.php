@@ -26,11 +26,34 @@
 
                 <div class="offset-md-1 offset-lg-1 col-md-8 col-lg-8">
                     <ul class="menu">
-                        <li class="menu__item"><a href="/index.php?c=index" class="menu__link">Обзоры</a></li>
-                        <li class="menu__item"><a href="/index.php?c=article" class="menu__link">Новости-Outdoor</a>
-                        </li>
-                        <li class="menu__item"><a href="/index.php?c=tour" class="menu__link">Туры</a></li>
-                        <li class="menu__item"><a href="/index.php?c=shand" class="menu__link">Барахолка</a></li>
+                        <?php $menu = ['Обзоры' => '/index.php?c=post',
+                            'Новости-Outdoor' => '/index.php?c=article',
+                            'Туры' => '/index.php?c=tour',
+                            'Барахолка' => '/index.php?c=shand'];
+
+                        //start костылина, чтобы как-то назначить индексу без get'параметра класс; не надо так делать! //
+                        $numMenuItem = 1;
+
+                        foreach ($menu as $page => $url) {
+
+                            if (count($_GET) == 0) {
+                                switch($numMenuItem) {
+                                    case '0':
+                                        $switchMenuClass = 'menu__link';
+                                        break;
+                                    case '1':
+                                        $switchMenuClass = 'menu__link menu__link--active';
+                                        break;
+                                }
+                                $numMenuItem--;
+                            }
+                            // end //
+
+                            else {
+                                $switchMenuClass = strpos($_SERVER['REQUEST_URI'], $url) !== false ? 'menu__link menu__link--active' : 'menu__link';
+                            } ?>
+                            <li class="menu__item"><a href="<?php echo $url?>" class="<?php echo $switchMenuClass?>"><?php echo $page?></a></li>
+                        <?php } ?>
                     </ul>
                 </div>
 

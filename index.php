@@ -6,7 +6,7 @@ include_once 'model/m_system.php';
 
 session_start();
 
-$controller = $_GET['c'] ?? 'index';
+$controller = $_GET['c'] ?? 'post';
 $error404   = false;
 
 if (!file_exists('controller/c_' . $controller . '.php') || $controller == '') {
@@ -17,7 +17,7 @@ if (!$error404) {
     include_once 'controller/c_' . $controller . '.php';
 
     switch ($controller) {
-        case 'index':
+        case 'post':
             echo setTemplate('v_main_double', ['innerContent' => $innerContent, 'innerAside' => $innerAside, 'pageTitle' => $pageTitle]);
             break;
         case 'post_single':
